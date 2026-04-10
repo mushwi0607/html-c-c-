@@ -1,0 +1,18 @@
+Console.WriteLine("HỆ THỐNG QUẢN LÝ SINH VIÊN");
+  Console.WriteLine("1.Thêm sinh viên");
+  Console.WriteLine("2.Sửa thông tin sinh viên");
+  Console.WriteLine("3.Xóa thông tin sinh viên");
+  Console.WriteLine("4.Nhập điểm cho sinh viên");
+  Console.WriteLine("5.Thống kê ");
+  Console.WriteLine("6.Thoát khỏi chương trình");
+  Console.Write("Nhập vào chức năng : ");
+  int yc= int.Parse(Console.ReadLine());
+  switch (yc) {
+      case 1: Console.WriteLine("chạy chức năng 1");break;
+      case 2: Console.WriteLine("chạy chức năng 2"); break;
+      case 3: Console.WriteLine("chạy chức năng 3"); break;
+      case 4: Console.WriteLine("chạy chức năng 4"); break;
+      case 5: Console.WriteLine("chạy chức năng 5"); break;
+      case 6:  break;
+      default: Console.WriteLine(" Hệ thống không có chức năng này"); break;
+  }
