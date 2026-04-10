@@ -1,0 +1,22 @@
+
+
+        static void Main() {
+
+            //ko bị lỗi tiếng việt có dấu
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
+            Console.Write("nhập thông tin chủ hộ"); string hoTen=Console.ReadLine();
+            Console.Write("nhập CS điện hiện tai"); float CSD2 = float.Parse(Console.ReadLine()) ;
+            Console.Write("nhập CS điện tháng trước"); float CSD1 = float.Parse(Console.ReadLine());
+            double tienDien = 0;
+            float DTT = CSD2 - CSD1;
+            if (DTT <= 60) tienDien = DTT * 1000;
+            else if (DTT <= 160) tienDien = 60 * 1000 + (DTT - 60) * 1500;
+            else tienDien = 60 * 1000 + 100 * 1500 + (DTT - 160) * 2000;
+            Console.WriteLine("Chủ hộ {0,-10} sử dụng hết {1,7:N2} thành tiền {2,10:C}", hoTen, DTT, tienDien);
+
+
+
+        }
+    }
+}
