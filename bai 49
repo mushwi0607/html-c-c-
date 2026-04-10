@@ -1,0 +1,14 @@
+// Bài 4,9 cấu trúc if
+ if (thang == 2 || thang == 3 || thang == 4) Console.WriteLine("Mùa xuân");
+ else if (thang == 5 || thang == 6 || thang == 7) Console.WriteLine("Mùa hè");
+ else if (thang == 8 || thang == 9 || thang == 10) Console.WriteLine("Mùa thu");
+ else if (thang == 11 || thang == 12 || thang == 1) Console.WriteLine("Mùa đông");
+ else Console.WriteLine("giá trị nhập ko đúng");
+ // cấu trúc switch
+ switch (thang) {
+     case 2: case 3: case 4: Console.WriteLine("mùa xuân");break;
+     case 5: case 6: case 7: Console.WriteLine("mùa hè"); break;
+     case 8: case 9: case 10: Console.WriteLine("mùa thu"); break;
+     case 11: case 12: case 1: Console.WriteLine("mùa đông"); break;
+     default: Console.WriteLine("tháng không đúng");break;
+ }
