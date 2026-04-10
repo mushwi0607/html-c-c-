@@ -1,0 +1,12 @@
+Console.Write("nhập vào thứ : ");
+  int so =int.Parse(Console.ReadLine());
+  switch (so) { 
+      case 2: Console.WriteLine("thứ  2");break;
+      case 3: Console.WriteLine("thứ  3"); break;
+      case 4: 
+      case 5: 
+      case 6: Console.WriteLine("thứ  6"); break;
+      case 7: Console.WriteLine("thứ  7"); break;
+      case 8: Console.WriteLine("CN"); break;
+      default: Console.WriteLine("Không có thứ này");break;
+  }
