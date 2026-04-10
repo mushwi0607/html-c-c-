@@ -1,0 +1,24 @@
+namespace bt
+{
+    class bt1
+    {
+        static void Main()
+        {
+            // ko bị lỗi tiếng việt có dấu
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
+            // xếp loại điểm hạnh kiểm
+            Console.Write("nhập họ tên sinh viên : ");  string hoten = Console.ReadLine();
+            Console.Write("nhập vào điểm hk : "); int hk = int.Parse(Console.ReadLine());
+            string xeploai;
+            if (hk >= 90) xeploai = "xuất sắc";
+            else if (hk >= 80) xeploai = "Tốt";
+            else if (hk >= 65) xeploai = "khá";
+            else if (hk >= 50) xeploai = "TB";
+            else if (hk >= 30) xeploai = "yếu";
+            else xeploai = "Kém";
+            Console.WriteLine("Họ tên sinh viên {0,-10} xếp loại hạnh kiểm {1}",hoten,xeploai);
+           
+        }
+    }
+}
