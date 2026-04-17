@@ -1,0 +1,106 @@
+Chuyển đến nội dung chính
+Google Lớp học
+Lớp học
+TKW 101252
+Màn hình chính
+Lịch
+Giảng dạy
+Cần đánh giá
+t
+thế giới kì diệu của bino
+1
+Đã đăng ký
+Việc cần làm
+T
+TKW 101252
+C
+CDS-101252-Ca 2
+P
+Python - 101252 - Ca 2
+C
+Capybara Go
+Gamers
+Lớp học đã lưu trữ
+Cài đặt
+Bài tập buổi số 3
+Ngo Lan Anh
+•
+8 thg 4
+100 điểm
+Nhận xét của lớp học
+Bài tập của bạn
+Đã nộp
+bai47.cs
+Văn bản
+
+bai48.cs
+Văn bản
+
+Program.cs
+Văn bản
+
+Nhận xét riêng tư
+Giải thích
+namespace baitap
+{
+   class Bai47
+    {
+        static void Main()
+        {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.InputEncoding = System.Text.Encoding.UTF8;
+
+            double a, b, c;
+
+            Console.Write("Nhập a: ");
+            a = double.Parse(Console.ReadLine());
+
+            Console.Write("Nhập b: ");
+            b = double.Parse(Console.ReadLine());
+
+            Console.Write("Nhập c: ");
+            c = double.Parse(Console.ReadLine());
+
+            if (a==0) {
+                if (b==0) {
+                    Console.WriteLine(c==0 ? "Vô số nghiệm" : "Vô nghiệm");
+                }
+                else{
+                    Console.WriteLine("Phương trình bậc nhất, nghiệm x = " + (-c / b));
+                }
+                return;
+            }
+
+            double delta = b * b - 4 * a * c;
+            int check;
+
+            if (delta < 0)
+                check = -1;
+            else if (delta == 0)
+                check = 0;
+            else
+                check = 1;
+
+            switch (check) {
+                case -1:
+                    Console.WriteLine("Phương trình vô nghiệm");
+                    break;
+
+                case 0:
+                    double x = -b / (2 * a);
+                    Console.WriteLine("Phương trình có nghiệm kép x = " + x);
+                    break;
+
+                case 1:
+                    double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                    double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+                    Console.WriteLine("Phương trình có 2 nghiệm:");
+                    Console.WriteLine("x1 = " + x1);
+                    Console.WriteLine("x2 = " + x2);
+                    break;
+            }
+        }
+    }
+}
+bai47.cs
+Đang hiển thị 46.csproj.Đang nộp bài…
