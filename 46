@@ -1,0 +1,77 @@
+Chuyển đến nội dung chính
+Google Lớp học
+Lớp học
+TKW 101252
+Màn hình chính
+Lịch
+Giảng dạy
+Cần đánh giá
+t
+thế giới kì diệu của bino
+1
+Đã đăng ký
+Việc cần làm
+T
+TKW 101252
+C
+CDS-101252-Ca 2
+P
+Python - 101252 - Ca 2
+C
+Capybara Go
+Gamers
+Lớp học đã lưu trữ
+Cài đặt
+Bài tập buổi số 3
+Ngo Lan Anh
+•
+8 thg 4
+100 điểm
+Nhận xét của lớp học
+Bài tập của bạn
+Đã nộp
+bai47.cs
+Văn bản
+
+bai48.cs
+Văn bản
+
+Program.cs
+Văn bản
+
+Nhận xét riêng tư
+Giải thích
+﻿Console.WriteLine("Meunu");
+Console.WriteLine("Ca vien chien");
+Console.WriteLine("xuc xich");
+Console.WriteLine("lap xuong");
+Console.WriteLine("kimbap");
+Console.WriteLine("coca");
+Console.WriteLine("nhap mnon an" );
+int so = int.Parse(Console.ReadLine());
+switch (so)
+{
+    case 1:
+        Console.WriteLine("ban da chon ca vien chien");
+        break;
+    case 2:
+        Console.WriteLine("ban da chon xuc xich");
+        break;
+    case 3:
+        Console.WriteLine("ban da chon lap xuong");
+        break;
+    case 4:
+        Console.WriteLine("ban da chon kimbap");
+        break;
+    case 5:
+        Console.WriteLine("ban da chon coca");
+        break;
+    default:
+        Console.WriteLine("khong co mon an nay");
+        break;
+}
+
+
+
+Program.cs
+Đang hiển thị Program.cs.Đang nộp bài…
