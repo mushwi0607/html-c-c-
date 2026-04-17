@@ -1,0 +1,104 @@
+Chuyển đến nội dung chính
+Google Lớp học
+Lớp học
+TKW 101252
+Màn hình chính
+Lịch
+Giảng dạy
+Cần đánh giá
+t
+thế giới kì diệu của bino
+1
+Đã đăng ký
+Việc cần làm
+T
+TKW 101252
+C
+CDS-101252-Ca 2
+P
+Python - 101252 - Ca 2
+C
+Capybara Go
+Gamers
+Lớp học đã lưu trữ
+Cài đặt
+Bài tập buổi số 3
+Ngo Lan Anh
+•
+8 thg 4
+100 điểm
+Nhận xét của lớp học
+Bài tập của bạn
+Đã nộp
+bai47.cs
+Văn bản
+
+bai48.cs
+Văn bản
+
+Program.cs
+Văn bản
+
+Nhận xét riêng tư
+Giải thích
+namespace baitap
+{
+   class Bai47
+    {
+        static void Main()
+        {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.InputEncoding = System.Text.Encoding.UTF8;
+
+            Console.Write("Nhập tên SV1: ");
+            string ten1 = Console.ReadLine();
+            Console.Write("Nhập điểm Toán SV1: ");
+            double toan1 = double.Parse(Console.ReadLine());
+            Console.Write("Nhập điểm Lý SV1: ");
+            double ly1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Nhập tên SV2: ");
+            string ten2 = Console.ReadLine();
+            Console.Write("Nhập điểm Toán SV2: ");
+            double toan2 = double.Parse(Console.ReadLine());
+            Console.Write("Nhập điểm Lý SV2: ");
+            double ly2 = double.Parse(Console.ReadLine());
+
+            int check;
+
+            if (toan1 > toan2)
+                check = 1;
+            else if (toan1 < toan2)
+                check = 2;
+            else
+            {
+                if (ly1 > ly2)
+                    check = 1;
+                else if (ly1 < ly2)
+                    check = 2;
+                else
+                    check = 0;
+            }
+
+            switch (check)
+            {
+                case 1:
+                    Console.WriteLine("\nSinh viên được chọn:");
+                    Console.WriteLine(ten1 + " - Toán: " + toan1 + ", Lý: " + ly1);
+                    break;
+
+                case 2:
+                    Console.WriteLine("\nSinh viên được chọn:");
+                    Console.WriteLine(ten2 + " - Toán: " + toan2 + ", Lý: " + ly2);
+                    break;
+
+                case 0:
+                    Console.WriteLine("\nSinh viên được chọn:");
+                    Console.WriteLine(ten1 + " - Toán: " + toan1 + ", Lý: " + ly1);
+                    break;
+            }
+        }
+    }
+}
+bai48.cs
+Đang hiển thị 46.csproj.Đang nộp bài…
