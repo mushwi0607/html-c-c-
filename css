@@ -1,0 +1,60 @@
+//Bài tập 5 Mở rộng bài mẫu 2 cho phép chương trình nhập tài khoản sau “Tai khoan:” và
+//mật khẩu từ bàn phím sau “Mat khau:“
+//Bài tập 2 Xây dựng chương trình hiển thị ra màn hình menu như sau:
+//F1: Nhap             F5: Tim kiếm theo ten
+//F2: Nhap them        F6: Hiển thị học sinh gioi
+//F3: Doc tep          F7: Thong ke
+//F4: Hien thi         ESC: Thoat
+namespace Baitap
+
+{
+    class Vonglap
+    {
+        static void Chuongtrinh()
+        {
+            Console.WriteLine("F1: Nhap");
+            Console.WriteLine("F2: Nhap them");
+            Console.WriteLine("F3: Doc tep");
+            Console.WriteLine("F4: Hien thi");
+            Console.WriteLine("F5: Tim kiếm theo ten");
+            Console.WriteLine("F6: Hiển thị học sinh gioi");
+            sonsole.writeline("F7: Thong ke");
+            console.writeline("ESC: Thoat");
+            Console.Write("Nhập vào chức năng : ");
+            int yc = int.Parse(Console.ReadLine());
+            switch (yc)
+            {
+                case 1: Console.WriteLine("chạy chức năng 1"); Chuongtrinh(); break;
+                case 2: Console.WriteLine("chạy chức năng 2"); Chuongtrinh(); break;
+                case 3: Console.WriteLine("chạy chức năng 3"); Chuongtrinh(); break;
+                case 4: Console.WriteLine("chạy chức năng 4"); Chuongtrinh(); break;
+                case 5: Console.WriteLine("chạy chức năng 5"); Chuongtrinh(); break;
+                case 6: Console.WriteLine("chạy chức năng 6"); Chuongtrinh(); break;
+                case 7: Console.WriteLine("chạy chức năng 7"); Chuongtrinh(); break;
+                case 8: Console.WriteLine("Thoát chương trình"); break;
+                default: Console.WriteLine(" Hệ thống không có chức năng này"); Chuongtrinh(); break;
+            }
+        }
+        static void Main(string[] args)
+        {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
+            string user, pass;
+            int demdn = 0;
+            Console.WriteLine("ĐĂNG NHẬP HỆ THỐNG");
+            do
+            {
+                demdn++;
+                if (demdn > 3) { Console.WriteLine("Đã đăng nhập 3 lần rồi"); break; }
+                Console.Write("Nhập user : "); user = Console.ReadLine();
+                Console.Write("Nhập pass : "); pass = Console.ReadLine();
+                if (user == "" || pass == "") Console.WriteLine("Tk không được trống");
+                else if (user != "admin" || pass != "utehy") Console.WriteLine("Tk không khớp , nhập lại đê");
+                
+            }
+            while (user == "" || pass ==""  || user != "admin" || pass != "utehy");
+            if (demdn <= 3) { Console.WriteLine("Đã đăng nhập thành công ! ");Chuongtrinh(); }
+
+        }
+    }
+}
